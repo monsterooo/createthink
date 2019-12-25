@@ -1,0 +1,13 @@
+@import './common';
+
+.navbar {
+  .collapse {
+    a {
+      color: color('main-gray') !important;
+      transition: color 0.5s;
+      &:hover {
+        color: color('main-green') !important;
+      }
+    }
+  }
+}

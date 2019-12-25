@@ -1,0 +1,12 @@
+// css root变量定义
+$colors: (
+  main-gray:  #35404e, // 文本主灰色
+  main-green: #6dc77a, // 文本主绿色
+);
+
+@import "bootstrap/scss/_functions.scss";
+@import "bootstrap/scss/_variables.scss";
+
+$font-family-base:            $font-family-monospace; // 使用等宽字体
+
+@import 'bootstrap/scss/bootstrap';

@@ -1,0 +1,14 @@
+.split-shap {
+  position: absolute;
+  pointer-events: none;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  svg {
+    transform: scale(2);
+    transform-origin: top center;
+    width: 100%;
+    height: auto;
+  }
+}

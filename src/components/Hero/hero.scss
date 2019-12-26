@@ -13,8 +13,22 @@
     top: 0;
     width: 80%;
     height: 100%;
-    opacity: 0.45;
+    opacity: 0.85;
     background-color: var(--white);
     clip-path: polygon(0 0, 90% 0, 70% 100%, 0 100%);
+  }
+
+  &__heading {
+    z-index: 1;
+
+    h1 {
+      color: color('main-gray');
+    }
+    p {
+      line-height: 2;
+    }
+    .btn {
+      padding: 0.5em 2em;
+    }
   }
 }

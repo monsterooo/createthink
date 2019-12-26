@@ -1,0 +1,20 @@
+@import '../styles/common.scss';
+
+.hero {
+  position: relative;
+  padding: 240px 0;
+  background: url(./assets/background.jpg) no-repeat center center;
+  background-size: cover;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    opacity: 0.45;
+    background-color: var(--white);
+    clip-path: polygon(0 0, 90% 0, 70% 100%, 0 100%);
+  }
+}

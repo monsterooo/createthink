@@ -1,0 +1,26 @@
+@import '../styles/common';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--white);
+  transition: box-shadow 0.5s;
+
+  &--stick {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  }
+}
+.navbar {
+  .collapse {
+    a {
+      color: color('main-gray') !important;
+      transition: color 0.5s;
+      &:hover {
+        color: color('main-green') !important;
+      }
+    }
+  }
+}

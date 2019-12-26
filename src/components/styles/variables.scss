@@ -3,6 +3,11 @@ $colors: (
   main-gray:  #35404e, // 文本主灰色
   main-green: #6dc77a, // 文本主绿色
 );
+$theme-colors: (
+  green: #6dc77a
+);
+
+
 
 @import "bootstrap/scss/_functions.scss";
 @import "bootstrap/scss/_variables.scss";

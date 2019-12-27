@@ -31,3 +31,23 @@
     }
   }
 }
+
+$extensionColor: #f6f7fa;
+.extension__split {
+  color: $extensionColor;
+}
+.extension {
+  background: $extensionColor;
+  &__item {
+    padding: 48px 16px;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+    
+    &:hover {
+      border-radius: 4px;
+      background: var(--white);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+      transform: translateY(-7px);
+    }
+  }
+}
+

@@ -6,11 +6,7 @@ import './home.scss';
 function Home() {
   return (
     <>
-      <SplitShap>
-        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor" />
-        </svg>
-      </SplitShap>
+      <SplitShap className="text-white" />
       <div className="container">
         <section className="section">
           <div className="service">
@@ -115,9 +111,28 @@ function Home() {
           </div>
         </section>
       </div>
-      <section className="section">
-        tools
-      </section>
+      <SplitShap className="extension__split" />
+      <div className="extension">
+        <div className="container">
+          <section className="section">
+            <h4 className="text-center">Template Features</h4>
+            <p className="text-center">Build responsive, mobile-first projects on the web with the world's most popular front-end component library.</p>
+            <div className="row extension__">
+              <div className="col-4">
+                <div className="extension__item text-center">
+                  <i className="ti-comments-smiley"></i>
+                  <h4></h4>
+                </div>
+              </div>
+              <div className="col-4">
+                <div className="extension__item text-center">
+                  b
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </>
   )
 }

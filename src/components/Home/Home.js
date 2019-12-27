@@ -115,18 +115,65 @@ function Home() {
       <div className="extension">
         <div className="container">
           <section className="section">
-            <h4 className="text-center">Template Features</h4>
-            <p className="text-center">Build responsive, mobile-first projects on the web with the world's most popular front-end component library.</p>
-            <div className="row extension__">
-              <div className="col-4">
+            <h4 className="text-center">技术与服务</h4>
+            <p className="extension__desciption text-center mt-4 text-secondary">一旦您选择我们, 将会真真切切的为您提供如下的技术与服务. 有些服务可能您能切实的体会到, 但是有些可能会在幕后为你提供服务不那么容易察觉. </p>
+            <div className="mt-5 row">
+              <div className="col-3">
                 <div className="extension__item text-center">
                   <i className="ti-comments-smiley"></i>
-                  <h4></h4>
+                  <h4>方案定制</h4>
+                  <p className="text-secondary">我们将会与您一起沟通共同确定产品功能和原型输出</p>
                 </div>
               </div>
-              <div className="col-4">
+              <div className="col-3">
                 <div className="extension__item text-center">
-                  b
+                  <i className="ti-ruler-pencil"></i>
+                  <h4>界面设计</h4>
+                  <p className="text-secondary">根据您的需求或产品形态, 设计出符合产品的UI视觉</p>
+                </div>
+              </div>
+              <div className="col-3">
+                <div className="extension__item text-center">
+                  <i className="ti-hummer"></i>
+                  <h4>制作开发</h4>
+                  <p className="text-secondary">进行程序的开发. 其中包括(前台、后台、数据库、框架)等一些列的开发</p>
+                </div>
+              </div>
+              <div className="col-3">
+                <div className="extension__item text-center">
+                  <i className="ti-comments-smiley"></i>
+                  <h4>项目测试</h4>
+                  <p className="text-secondary">
+                    软件交付前进行全面的功能和性能测试, 保证软件的交付质量
+                  </p>
+                </div>
+              </div>
+              <div className="col-3">
+                <div className="extension__item text-center">
+                  <i className="ti-comments-smiley"></i>
+                  <h4>工作流程</h4>
+                  <p className="text-secondary">通过在线协作软件与项目管理软件实时沟通项目进度以及项目成果</p>
+                </div>
+              </div>
+              <div className="col-3">
+                <div className="extension__item text-center">
+                  <i className="ti-comments-smiley"></i>
+                  <h4>SEO优化</h4>
+                  <p className="text-secondary">分析定制Keyword、Meta、出站连接、接入监控平台以及更多的Technical SEO</p>
+                </div>
+              </div>
+              <div className="col-3">
+                <div className="extension__item text-center">
+                  <i className="ti-link"></i>
+                  <h4>部署维护</h4>
+                  <p className="text-secondary">将为您提供永久免费的故障, 包括服务器问题、数据库问题以及部署方面的问题</p>
+                </div>
+              </div>
+              <div className="col-3">
+                <div className="extension__item text-center">
+                  <i className="ti-comments-smiley"></i>
+                  <h4>共同成长</h4>
+                  <p className="text-secondary">将为您提供永久免费的故障, 包括服务器问题、数据库问题以及部署方面的问题</p>
                 </div>
               </div>
             </div>

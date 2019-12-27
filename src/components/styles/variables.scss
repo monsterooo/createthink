@@ -6,7 +6,7 @@ $colors: (
 $theme-colors: (
   green: #6dc77a
 );
-
+$box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); // 覆盖bs的默认阴影
 
 
 @import "bootstrap/scss/_functions.scss";

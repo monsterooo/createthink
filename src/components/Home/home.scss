@@ -12,4 +12,22 @@
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
     }
   }
+  .card {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__title {
+    color: color('main-green'); // 展开样式
+
+    &:hover {
+      text-decoration: none;
+      color: color('main-green'); // 展开样式
+    }
+    &.collapsed { // 折叠样式
+      color: color('main-gray');
+    }
+  }
 }

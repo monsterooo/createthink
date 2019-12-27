@@ -8,6 +8,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 // import { useStaticQuery, graphql } from "gatsby";
+import 'bootstrap';
 import Header from "./Header/Header";
 import Hero from './Hero/Hero';
 import Footer from './Footer/Footer';

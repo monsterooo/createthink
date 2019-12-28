@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
+import $ from 'jquery';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel';
 import SplitShap from '../SplitShap/SplitShap';
 import skillImg from './assets/service-left.jpg';
+import covert1 from './assets/covert1.jpeg';
 import './home.scss';
 
 function Home() {
+  useEffect(() => {
+    $('.customer').owlCarousel({
+      items: 1,
+      loop:true,
+      nav:true,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+    })
+  }, [])
   return (
     <>
       <SplitShap className="text-white" />
@@ -57,48 +72,48 @@ function Home() {
                   <div className="accordion" id="skill">
                     <div className="card shadow">
                       <a href="#bootstrap" className="skill__title" data-toggle="collapse">
-                      <div class="card-header">
+                      <div className="card-header">
                         Bootstrap
                       </div>
                       </a>
                       <div id="bootstrap" data-parent="#skill" className="collapse show">
-                        <div class="card-body">
+                        <div className="card-body">
                           bootstrap one
                         </div>
                       </div>
                     </div>
                     <div className="card shadow">
                       <a href="#sass" className="skill__title collapsed" data-toggle="collapse">
-                      <div class="card-header">
+                      <div className="card-header">
                         Sass
                       </div>
                       </a>
                       <div id="sass" data-parent="#skill" className="collapse">
-                        <div class="card-body">
+                        <div className="card-body">
                           sass one
                         </div>
                       </div>
                     </div>
                     <div className="card shadow">
                       <a href="#styled" className="skill__title collapsed" data-toggle="collapse">
-                      <div class="card-header">
+                      <div className="card-header">
                         Styled-Component
                       </div>
                       </a>
                       <div id="styled" data-parent="#skill" className="collapse">
-                        <div class="card-body">
+                        <div className="card-body">
                           styled-component one
                         </div>
                       </div>
                     </div>
                     <div className="card shadow">
                       <a href="#redux" className="skill__title collapsed" data-toggle="collapse">
-                      <div class="card-header">
+                      <div className="card-header">
                         Redux
                       </div>
                       </a>
                       <div id="redux" data-parent="#skill" className="collapse">
-                        <div class="card-body">
+                        <div className="card-body">
                           redux one
                         </div>
                       </div>
@@ -141,7 +156,7 @@ function Home() {
               </div>
               <div className="col-3">
                 <div className="extension__item text-center">
-                  <i className="ti-comments-smiley"></i>
+                  <i className="ti-bolt"></i>
                   <h4>项目测试</h4>
                   <p className="text-secondary">
                     软件交付前进行全面的功能和性能测试, 保证软件的交付质量
@@ -150,30 +165,54 @@ function Home() {
               </div>
               <div className="col-3">
                 <div className="extension__item text-center">
-                  <i className="ti-comments-smiley"></i>
+                  <i className="ti-infinite"></i>
                   <h4>工作流程</h4>
                   <p className="text-secondary">通过在线协作软件与项目管理软件实时沟通项目进度以及项目成果</p>
                 </div>
               </div>
               <div className="col-3">
                 <div className="extension__item text-center">
-                  <i className="ti-comments-smiley"></i>
+                  <i className="ti-shine"></i>
                   <h4>SEO优化</h4>
                   <p className="text-secondary">分析定制Keyword、Meta、出站连接、接入监控平台以及更多的Technical SEO</p>
                 </div>
               </div>
               <div className="col-3">
                 <div className="extension__item text-center">
-                  <i className="ti-link"></i>
+                  <i className="ti-settings"></i>
                   <h4>部署维护</h4>
                   <p className="text-secondary">将为您提供永久免费的故障, 包括服务器问题、数据库问题以及部署方面的问题</p>
                 </div>
               </div>
               <div className="col-3">
                 <div className="extension__item text-center">
-                  <i className="ti-comments-smiley"></i>
+                  <i className="ti-stats-up"></i>
                   <h4>共同成长</h4>
                   <p className="text-secondary">将为您提供永久免费的故障, 包括服务器问题、数据库问题以及部署方面的问题</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="extension__contact shadow bg-white rounded p-5 mt-5">
+              ewfewfwe
+            </div>
+
+            <div className="row justify-content-center">
+              <div className="col-lg-6 col-md-9 text-center">
+                <div className="customer owl-carousel owl-theme">
+                  <div className="customer__view text-center">
+                    <p className="text-secondary">"I'll definitely add a link to this Chinese version in the main readme with credit going to you. Thanks again!!"</p>
+                    <div className="customer__info">
+                      <img src={covert1} alt=
+                      "" />
+                      <h6>Travis Fischer</h6>
+                      <p>Github</p>
+                    </div>
+                  </div>
+                  <div className="customer__view"> Your Content </div>
+                  <div className="customer__view"> Your Content </div>
+                  <div className="customer__view"> Your Content </div>
+                  <div className="customer__view"> Your Content </div>
                 </div>
               </div>
             </div>

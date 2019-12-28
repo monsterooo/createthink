@@ -41,7 +41,7 @@ $extensionColor: #f6f7fa;
   &__item {
     padding: 48px 16px;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
-    
+
     &:hover {
       border-radius: 4px;
       background: var(--white);
@@ -66,3 +66,9 @@ $extensionColor: #f6f7fa;
   }
 }
 
+.customer {
+  img {
+    margin: 0 auto;
+    width: 32px !important;
+  }
+}

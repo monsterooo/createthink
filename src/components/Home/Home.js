@@ -30,46 +30,46 @@ function Home() {
             <h4 className="mt-3">我们提供的服务</h4>
             <p className="text-secondary mt-4">我们都是全栈工程师. 如果您选择我们, 我们会以我们最好的激情和技术为您提供如下核心服务</p>
             <div className="container-fluid mt-5">
-              <div className="row text-center">
+              <div className="service__core row text-center">
                 <div className="col">
                   <i className="ti-comments-smiley"></i>
                   <h4 className="mt-2">
                     沟通&方案
                   </h4>
-                  <p>在第一个阶段, 我们会与您沟通和了解您的实际情况. 然后根据实际情况制定出最优的解决方案.</p>
+                  <p className="text-secondary">在第一个阶段, 我们会与您沟通和了解您的实际情况. 然后根据实际情况制定出最优的解决方案.</p>
                 </div>
                 <div className="col">
                   <i className="ti-ruler-pencil"></i>
                   <h4 className="mt-2">
                     原型&设计
                   </h4>
-                  <p>在第二个阶段, 我们会给出设计原型图与您确认. 如果方案确定我们将会进入设计阶段, 设计完成我们会与您再次确认.</p>
+                  <p className="text-secondary">在第二个阶段, 我们会给出设计原型图与您确认. 如果方案确定我们将会进入设计阶段, 设计完成我们会与您再次确认.</p>
                 </div>
                 <div className="col">
                   <i className="ti-hummer"></i>
                   <h4 className="mt-2">
                     制作&开发
                   </h4>
-                  <p>在第三个阶段, 我们会根据设计图进行程序的开发. 其中包括(前台、后台、数据库、框架)等一些列的开发, 其中我们会通过实时协作软件与您同步项目进度.</p>
+                  <p className="text-secondary">在第三个阶段, 我们会根据设计图进行程序的开发. 其中包括(前台、后台、数据库、框架)等一些列的开发, 其中我们会通过实时协作软件与您同步项目进度.</p>
                 </div>
                 <div className="col">
                   <i className="ti-link"></i>
                   <h4 className="mt-2">
                     交付&维护
                   </h4>
-                  <p>在第四个阶段, 我们会为您部署项目与使用教学. 之后如果遇到任何意外问题我们会随时提供技术支持.</p>
+                  <p className="text-secondary">在第四个阶段, 我们会为您部署项目与使用教学. 之后如果遇到任何意外问题我们会随时提供技术支持.</p>
                 </div>
               </div>
             </div>
 
-            <div className="skill container-fluid">
-              <div className="row">
+            <div className="skill container-fluid mt-5">
+              <div className="row align-items-center">
                 <div className="skill__cover col">
                   <img src={skillImg} alt="" className="w-100 shadow" />
                 </div>
                 <div className="col">
-                  <h4>Build beautiful & modular websites</h4>
-                  <p>Build responsive, mobile-first projects on the web with the world's most popular front-end component library.</p>
+                  <h4>技术范围</h4>
+                  <p className="text-secondary skill__description">下面允许我们自豪的介绍一下我们所熟悉的技术栈, 专业的技术为您提供专业的服务</p>
                   <div className="accordion" id="skill">
                     <div className="card shadow">
                       <a href="#bootstrap" className="skill__title" data-toggle="collapse">
@@ -79,31 +79,19 @@ function Home() {
                       </a>
                       <div id="bootstrap" data-parent="#skill" className="collapse show">
                         <div className="card-body">
-                          bootstrap one
+                          Bootstrp是世界上最受欢迎的前端组件库，在网络上构建响应式，移动优先的项目。它也是我们最基础的UI库
                         </div>
                       </div>
                     </div>
                     <div className="card shadow">
                       <a href="#sass" className="skill__title collapsed" data-toggle="collapse">
                       <div className="card-header">
-                        Sass
+                        React
                       </div>
                       </a>
                       <div id="sass" data-parent="#skill" className="collapse">
                         <div className="card-body">
-                          sass one
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card shadow">
-                      <a href="#styled" className="skill__title collapsed" data-toggle="collapse">
-                      <div className="card-header">
-                        Styled-Component
-                      </div>
-                      </a>
-                      <div id="styled" data-parent="#skill" className="collapse">
-                        <div className="card-body">
-                          styled-component one
+                          React是用于构建用户界面的JavaScript库，我们使用它来构建最现代化的前端组件。
                         </div>
                       </div>
                     </div>
@@ -115,12 +103,59 @@ function Home() {
                       </a>
                       <div id="redux" data-parent="#skill" className="collapse">
                         <div className="card-body">
-                          redux one
+                        Redux是JavaScript状态容器，提供可预测化的状态管理。我们使用它来管理应用程序中所有的状态
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card shadow">
+                      <a href="#webpack" className="skill__title collapsed" data-toggle="collapse">
+                      <div className="card-header">
+                        Webpack
+                      </div>
+                      </a>
+                      <div id="webpack" data-parent="#skill" className="collapse">
+                        <div className="card-body">
+                          webpack是一个现代JavaScript应用程序的静态模块打包器(module bundler)，我们使用它来打包应用程序。
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card shadow">
+                      <a href="#nodejs" className="skill__title collapsed" data-toggle="collapse">
+                      <div className="card-header">
+                        Node.js
+                      </div>
+                      </a>
+                      <div id="nodejs" data-parent="#skill" className="collapse">
+                        <div className="card-body">
+                          Node.js是基于Chrome V8 JavaScript引擎构建的JavaScript运行时，我们会使用它来开发后端程序以及一些CLI工具。
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card shadow">
+                      <a href="#rails" className="skill__title collapsed" data-toggle="collapse">
+                      <div className="card-header">
+                        Ruby on Rails
+                      </div>
+                      </a>
+                      <div id="rails" data-parent="#skill" className="collapse">
+                        <div className="card-body">
+                          Rails是一个基于Ruby的Web应用程序框架，使用它可以让我们可以快速搭建出功能完备的MVC程序。
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card shadow">
+                      <a href="#database" className="skill__title collapsed" data-toggle="collapse">
+                      <div className="card-header">
+                        Database
+                      </div>
+                      </a>
+                      <div id="database" data-parent="#skill" className="collapse">
+                        <div className="card-body">
+                          数据库我们在大多数情况下会选择MongoDB、PostgreSQL
                         </div>
                       </div>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -194,20 +229,31 @@ function Home() {
               </div>
             </div>
 
-            <div className="extension__contact shadow bg-white rounded p-5 mt-5">
-              ewfewfwe
+            <div className="extension__contact shadow bg-white rounded p-5">
+              <div className="row">
+                <div className="col-9">
+                  <h5>准备开始启动您的项目了吗？</h5>
+                  <p className="text-secondary mt-3 pr-4">欢迎向我们咨询创建一个Web项目的任何问题, 非常高兴我们的专业能力能够陪同您一起前行.</p>
+                </div>
+                <div className="col-3 align-self-center text-right">
+                  <a href="/" className="btn btn-outline-green">
+                    <i className="ti-email mr-2"></i>
+                    联系我们
+                  </a>
+                </div>
+              </div>
             </div>
 
             <div className="row justify-content-center">
               <div className="col-lg-6 col-md-9 text-center">
                 <div className="customer owl-carousel owl-theme">
                   <div className="customer__view text-center">
-                    <p className="text-secondary mb-0">"I'll definitely add a link to this Chinese version in the main readme with credit going to you. Thanks again!!"</p>
+                    <p className="text-secondary font-italic mb-0">"I'll definitely add a link to this Chinese version in the main readme with credit going to you. Thanks again!!"</p>
                     <div className="customer__info">
                       <img className="rounded-circle mt-3 mb-3" src={covert1} alt=
                       "" />
-                      <h6>Travis Fischer</h6>
-                      <p className="text-secondary">Github</p>
+                      <h6 className="mb-1">Travis Fischer</h6>
+                      <p className="text-secondary mb-0">Github</p>
                     </div>
                   </div>
                   <div className="customer__view"> Your Content </div>
@@ -219,6 +265,67 @@ function Home() {
             </div>
           </section>
         </div>
+      </div>
+      <SplitShap className="text-white" />
+      <div className="container latest-blog">
+        <section className="section">
+          <h4 className="text-center">最近博客</h4>
+          <p className="latest-blog__description mt-4 text-center text-secondary">Build responsive, mobile-first projects on the web with the world's most popular front-end component library.</p>
+          <div className="row mt-5">
+            <div className="col-4 bg-white">
+              <div className="latest-blog__item rounded border">
+                <div className="latest-blog__img" style={{ backgroundImage: `url(https://static.oschina.net/uploads/img/201912/23084003_H5oT.png)` }}></div>
+                <div className="p-3">
+                  <div className="clearfix">
+                    <small className="float-left">React</small>
+                    <small className="float-right text-muted">2019-12-25</small>
+                  </div>
+                  <a href="/" className="latest-blog__title d-block mt-2 mb-2">React Hooks 指南</a>
+                  <p className="text-secondary">There is now an abundance of readable dummy texts. These are usually used when a text is required purely to fill a space.</p>
+                  <div className="latest-blog__avatar border-top mt-3 pt-3 d-flex align-items-center">
+                    <img className="shadow rounded-pill mr-2" src={covert1} alt="" />
+                    <span>MonsterOOO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-4 bg-white">
+              <div className="latest-blog__item rounded border">
+                <div className="latest-blog__img" style={{ backgroundImage: `url(https://static.oschina.net/uploads/img/201912/23084003_H5oT.png)` }}></div>
+                <div className="p-3">
+                  <div className="clearfix">
+                    <small className="float-left">React</small>
+                    <small className="float-right text-muted">2019-12-25</small>
+                  </div>
+                  <a href="/" className="latest-blog__title d-block mt-2 mb-2">React Hooks 指南</a>
+                  <p className="text-secondary">There is now an abundance of readable dummy texts. These are usually used when a text is required purely to fill a space.</p>
+                  <div className="latest-blog__avatar border-top mt-3 pt-3 d-flex align-items-center">
+                    <img className="shadow rounded-pill mr-2" src={covert1} alt="" />
+                    <span>MonsterOOO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-4 bg-white">
+              <div className="latest-blog__item rounded border">
+                <div className="latest-blog__img" style={{ backgroundImage: `url(https://static.oschina.net/uploads/img/201912/23084003_H5oT.png)` }}></div>
+                <div className="p-3">
+                  <div className="clearfix">
+                    <small className="float-left">React</small>
+                    <small className="float-right text-muted">2019-12-25</small>
+                  </div>
+                  <a href="/" className="latest-blog__title d-block mt-2 mb-2">React Hooks 指南</a>
+                  <p className="text-secondary">There is now an abundance of readable dummy texts. These are usually used when a text is required purely to fill a space.</p>
+                  <div className="latest-blog__avatar border-top mt-3 pt-3 d-flex align-items-center">
+                    <img className="shadow rounded-pill mr-2" src={covert1} alt="" />
+                    <span>MonsterOOO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </section>
       </div>
     </>
   )

@@ -6,12 +6,13 @@ $colors: (
 $theme-colors: (
   green: #6dc77a
 );
+$border-color: #e9ecef;
 $box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); // 覆盖bs的默认阴影
 
 
 @import "bootstrap/scss/_functions.scss";
 @import "bootstrap/scss/_variables.scss";
 
-$font-family-base:            $font-family-monospace; // 使用等宽字体
+// $font-family-base:            $font-family-monospace; // 使用等宽字体
 
 @import 'bootstrap/scss/bootstrap';

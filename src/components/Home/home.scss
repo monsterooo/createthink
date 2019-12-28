@@ -1,8 +1,17 @@
 @import "../styles/common.scss";
 
 .service {
-  i {
-    font-size: 42px;
+  &__core {
+    i {
+      color: color('main-green');
+      font-size: 42px;
+    }
+    h4 {
+      color: color('main-gray');
+    }
+    p {
+      font-size: 14px;
+    }
   }
 }
 .skill {
@@ -64,6 +73,24 @@ $extensionColor: #f6f7fa;
     max-width: 600px;
     margin: 0 auto;
   }
+  &__contact {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    .btn {
+      letter-spacing: 2px;
+      width: 80%;
+      color: color('main-green');
+      &:hover {
+        color: white;
+      }
+    }
+    h5 {
+      color: color('main-gray');
+    }
+    p {
+      font-size: 14px;
+    }
+  }
 }
 
 .customer {
@@ -83,6 +110,55 @@ $extensionColor: #f6f7fa;
     }
     &:focus {
       outline: none;
+    }
+  }
+  &__info {
+    p {
+      font-size: 12px;
+    }
+  }
+}
+.latest-blog {
+  &__item {
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+
+    &:hover {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+      transform: translateY(-7px);
+    }
+  }
+  &__title {
+    color: color('main-gray');
+    font-size: 16px;
+    transition: color 0.5s;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+
+    &:hover {
+      color: color('main-green') !important;
+    }
+  }
+  &__description {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  &__img {
+    width: 100%;
+    padding: 35%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+  &__avatar {
+    img {
+      width: 32px;
+    }
+    span {
+      font-size: 12px;
     }
   }
 }

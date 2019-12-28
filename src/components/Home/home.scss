@@ -69,6 +69,20 @@ $extensionColor: #f6f7fa;
 .customer {
   img {
     margin: 0 auto;
-    width: 32px !important;
+    width: 42px !important;
+  }
+  .owl-dot {
+    span {
+      transition: all 0.5s ease !important;
+      background: #b7e3bd !important;
+    }
+    &.active span {
+      background: #6dc77a !important;
+      // height: 7px;
+      width: 13px;
+    }
+    &:focus {
+      outline: none;
+    }
   }
 }

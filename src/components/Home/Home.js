@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import $ from 'jquery';
 import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'owl.carousel';
 import SplitShap from '../SplitShap/SplitShap';
 import skillImg from './assets/service-left.jpg';
@@ -11,12 +12,12 @@ function Home() {
   useEffect(() => {
     $('.customer').owlCarousel({
       items: 1,
-      loop:true,
-      nav:true,
+      loop: true,
+      nav: false,
       dots: true,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      autoplayHoverPause: true,
+      // autoplay: true,
+      // autoplayTimeout: 3000,
+      // autoplayHoverPause: true,
     })
   }, [])
   return (
@@ -201,12 +202,12 @@ function Home() {
               <div className="col-lg-6 col-md-9 text-center">
                 <div className="customer owl-carousel owl-theme">
                   <div className="customer__view text-center">
-                    <p className="text-secondary">"I'll definitely add a link to this Chinese version in the main readme with credit going to you. Thanks again!!"</p>
+                    <p className="text-secondary mb-0">"I'll definitely add a link to this Chinese version in the main readme with credit going to you. Thanks again!!"</p>
                     <div className="customer__info">
-                      <img src={covert1} alt=
+                      <img className="rounded-circle mt-3 mb-3" src={covert1} alt=
                       "" />
                       <h6>Travis Fischer</h6>
-                      <p>Github</p>
+                      <p className="text-secondary">Github</p>
                     </div>
                   </div>
                   <div className="customer__view"> Your Content </div>

@@ -5,19 +5,20 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import Home from '../components/Home/Home';
 
+const heroLeft = (
+  <div>
+    <h1>创造&实现商业计划</h1>
+    <p className="text-secondary mt-4">CREATETHINK为您提供定制的设计、开发服务, 同时注重制作移动优先的WEB、H5和小程序。根据您的需要量身定义最合适的系统。</p>
+    <div>
+      <button className="btn btn-green text-white mt-4">免费咨询</button>
+    </div>
+  </div>
+)
+
 const IndexPage = () => (
-  <Layout>
+  <Layout heroLeft={heroLeft}>
     <SEO title="Home" />
     <Home />
-
-    <h1>Hi people</h1>
-    <button type="button" className="btn btn-primary">Primary</button>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 

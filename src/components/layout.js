@@ -14,7 +14,7 @@ import Hero from './Hero/Hero';
 import Footer from './Footer/Footer';
 import './styles/themify-icons/themify-icons.css';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, heroLeft }) => {
   /*
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -29,9 +29,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <Header />
-      <Hero />
+      <Hero>
+        {heroLeft}
+      </Hero>
       {children}
       <Footer />
     </>

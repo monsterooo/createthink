@@ -1,0 +1,14 @@
+@import '../styles/common.scss';
+
+.footer {
+  color: #adb5bd;
+  background: color('main-drak');
+
+  a {
+    color: color('main-green');
+
+    &:hover {
+      color: color('main-green');
+    }
+  }
+}

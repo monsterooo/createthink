@@ -6,7 +6,7 @@
   background: url(./assets/background.jpg) no-repeat center center;
   background-size: cover;
 
-  &::after {
+  &--mask::after {
     content: '';
     position: absolute;
     left: 0;
@@ -16,6 +16,9 @@
     opacity: 0.85;
     background-color: var(--white);
     clip-path: polygon(0 0, 90% 0, 70% 100%, 0 100%);
+  }
+  &__bg2 {
+    background-image: url(./assets/blog-background.jpg);
   }
 
   &__heading {

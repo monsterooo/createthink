@@ -1,7 +1,10 @@
 import React, { useState, useLayoutEffect } from 'react';
+import { Link } from 'gatsby';
 import './header.scss';
 
-function Header() {
+function Header({
+  reversal,
+}) {
   const [stick, setStick] = useState(false);
   const handleScroll = () => {
     if (window.scrollY >= 60) return setStick(true);
@@ -11,7 +14,7 @@ function Header() {
     window.addEventListener('scroll', handleScroll);
   }, [])
   return (
-    <div className={`header ${stick ? 'header--stick' : ''}`}>
+    <div className={`header ${reversal ? 'header--reversal' : ''} ${stick ? 'header--stick' : ''}`}>
       <div className="container">
         <nav className="pl-0 pr-0 navbar navbar-expand-lg navbar-light justify-content-between">
           <a className="navbar-brand" href="/">CREATETHINK</a>
@@ -34,7 +37,7 @@ function Header() {
                 <a className="nav-link pl-3 pr-3" href="/">关于</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link pl-3 pr-3" href="/">联系</a>
+                <Link to="/contact" className="nav-link pl-3 pr-3">联系</Link>
               </li>
             </ul>
           </div>
@@ -42,6 +45,10 @@ function Header() {
       </div>
     </div>
   )
+}
+
+Header.defaultProps = {
+  reversal: false,
 }
 
 export default Header;

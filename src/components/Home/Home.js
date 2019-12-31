@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from 'gatsby';
 import $ from 'jquery';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -9,7 +10,7 @@ import skillImg from './assets/service-left.jpg';
 import covert1 from './assets/covert1.jpeg';
 import './home.scss';
 
-function Home() {
+function Home({ blogs }) {
   useEffect(() => {
     $('.customer').owlCarousel({
       items: 1,
@@ -272,7 +273,11 @@ function Home() {
         <section className="section">
           <h4 className="text-center">最近博客</h4>
           <p className="latest-blog__description mt-4 text-center text-secondary">Build responsive, mobile-first projects on the web with the world's most popular front-end component library.</p>
-          <BlogCard />
+          <div className="row mt-5">
+            {
+              blogs.map(blog => <BlogCard key={blog.node.id} blog={blog} />)
+            }
+          </div>
         </section>
       </div>
     </>

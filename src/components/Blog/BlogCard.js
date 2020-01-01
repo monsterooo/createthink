@@ -1,7 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 import { Link } from 'gatsby';
-import covert1 from '../Home/assets/covert1.jpeg';
+import avatar from '../Home/assets/avatar.jpeg';
 
 function BlogCard({ blog: { node } }) {
   console.log('blog > ', node)
@@ -17,7 +17,7 @@ function BlogCard({ blog: { node } }) {
           <Link className="latest-blog__title d-block mt-2 mb-2" to={`/${node.id}`} alt={node.title}>{node.title}</Link>
           <p className="text-secondary">{node.description}</p>
           <div className="latest-blog__avatar border-top mt-3 pt-3 d-flex align-items-center">
-            <img className="shadow rounded-pill mr-2" src={covert1} alt="" />
+            <img className="shadow rounded-pill mr-2" src={avatar} alt={node.title} />
             <span>{node.author.username}</span>
           </div>
         </div>

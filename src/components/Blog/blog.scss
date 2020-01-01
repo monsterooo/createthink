@@ -44,3 +44,18 @@
     }
   }
 }
+
+.blog-view {
+  &__img {
+    width: 100%;
+    padding: 35%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+  &__content {
+    font-size: 14px;
+  }
+}

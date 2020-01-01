@@ -11,8 +11,8 @@ const ContactPage = () => (
     <Header reversal />
     <Hero className="hero__bg2">
       <div>
-        <h1>Contact</h1>
-        <p className="text-secondary mt-4">contact</p>
+        <h1>联系我们</h1>
+        <p className="text-secondary mt-4">为您提供免费的咨询服务</p>
       </div>
     </Hero>
     <Contact />

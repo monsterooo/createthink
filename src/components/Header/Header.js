@@ -27,18 +27,21 @@ function Header({
               <li className="nav-item active">
                 <a className="nav-link pl-3 pr-3" href="/">主页 <span className="sr-only">(current)</span></a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link pl-3 pr-3" href="/">作品</a>
-              </li>
+              </li> */}
               <li className="nav-item">
-                <a className="nav-link pl-3 pr-3" href="/">博客</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link pl-3 pr-3" href="/">关于</a>
+                <Link to="/blog" className="nav-link pl-3 pr-3">博客</Link>
               </li>
               <li className="nav-item">
                 <Link to="/contact" className="nav-link pl-3 pr-3">联系</Link>
               </li>
+              <li className="nav-item">
+                <a href="https://coderlane.net" target="_blank" className="nav-link pl-3 pr-3">编程工具</a>
+              </li>
+              {/* <li className="nav-item">
+                <a className="nav-link pl-3 pr-3" href="/">关于</a>
+              </li> */}
             </ul>
           </div>
         </nav>
